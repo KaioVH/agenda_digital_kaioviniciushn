@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Agenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <h2>🚀 Minha Agenda</h2>
+
+            <nav>
+                <a href="#" onclick="mostrarPagina('inicio')">🏠 Início</a>
+                <a href="#" onclick="mostrarPagina('tarefas')">📋 Tarefas</a>
+                <a href="#" onclick="mostrarPagina('config')">⚙️ Configuração</a>
+            </nav>
+
+        </aside>
+
+        <!-- CONTEÚDO -->
+        <main class="content">
+
+            <!-- INÍCIO -->
+            <section id="paginaInicio" class="pagina ativa">
+
+                <div class="hero">
+                    <h1>🚀 Minha Agenda Digital</h1>
+
+                    <p class="subtitle">
+                        Organize suas tarefas de forma inteligente
+                    </p>
+
+                    <div class="info-box">
+                        <p>
+                            Este aplicativo foi desenvolvido utilizando HTML, CSS e JavaScript.
+                            O objetivo é criar uma ferramenta simples para cadastrar,
+                            acompanhar e organizar tarefas do dia a dia.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>📋 Cadastro de tarefas</h3>
+                        <p>Adicione, acompanhe e conclua suas atividades.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>📊 Interface Dashboard</h3>
+                        <p>Visual simples e intuitivo para organização.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🌙 Tema claro e escuro</h3>
+                        <p>Escolha a aparência mais confortável para trabalhar.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>💾 Armazenamento no navegador</h3>
+                        <p>Suas configurações ficam salvas automaticamente.</p>
+                    </div>
+
+                </div>
+
+                <a
+                    class="link-mdn"
+                    href="https://developer.mozilla.org/pt-BR/"
+                    target="_blank"
+                >
+                    Aprender mais sobre desenvolvimento Web
+                </a>
+
+                <br>
+                <br>
+                <br>
+                <div class="imagem-inicio">
+                <img src="img/images.jpg" alt="Programação Web">
+
+            </section>
+
+            <!-- TAREFAS -->
+            <section id="paginaTarefas" class="pagina">
+
+                <div class="tarefas">
+
+                    <h1>Minhas tarefas</h1>
+
+                    <input
+                        id="inputTarefa"
+                        type="text"
+                        placeholder="Digite uma tarefa"
+                    >
+
+                    <button onclick="adicionarTarefa()">
+                        🚀 Adicionar tarefa
+                    </button>
+
+                    <p id="totalTarefas">
+                        Total de tarefas: 0
+                    </p>
+
+                    <ul id="listaTarefas"></ul>
+
+                </div>
+
+            </section>
+
+            <!-- CONFIGURAÇÕES -->
+            <section id="paginaConfig" class="pagina">
+
+                <div class="config-box">
+
+                    <h1>⚙️ Configurações</h1>
+
+                    <div class="tema-box">
+                        <label>
+                            <input type="checkbox" id="toggleTema">
+                            Ativar modo escuro
+                        </label>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <footer>
+                Desenvolvido por Ariane Gomes da Silva
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
